@@ -1,0 +1,2121 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AROME | فروشگاه لوکس عطر و ادکلن</title>
+
+    <meta name="description" content="فروشگاه آنلاین عطر و ادکلن اورجینال">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+    <style>
+        /* =========================
+RESET
+========================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Vazirmatn", sans-serif;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+
+            background:
+                radial-gradient(circle at top right, #3a2a0066, transparent 30%),
+                linear-gradient(180deg, #08080c, #11111a);
+
+            color: white;
+
+            min-height: 100vh;
+
+            overflow-x: hidden;
+
+        }
+
+
+        a {
+
+            text-decoration: none;
+            color: inherit;
+
+        }
+
+
+        button {
+
+            border: none;
+            cursor: pointer;
+            font-family: inherit;
+
+        }
+
+
+
+
+        /* =========================
+CONTAINER
+========================= */
+
+
+        .container {
+
+            width: min(1200px, calc(100% - 40px));
+
+            margin: auto;
+
+        }
+
+
+
+
+
+
+        /* =========================
+HEADER
+========================= */
+
+
+        header {
+
+            position: sticky;
+
+            top: 0;
+
+            z-index: 1000;
+
+            background: rgba(10, 10, 15, .7);
+
+            backdrop-filter: blur(20px);
+
+            border-bottom: 1px solid rgba(255, 255, 255, .08);
+
+        }
+
+
+
+        .navbar {
+
+            height: 80px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            gap: 20px;
+
+        }
+
+
+
+        .logo {
+
+            font-size: 32px;
+
+            font-weight: 900;
+
+            letter-spacing: 6px;
+
+            color: #f7c948;
+
+        }
+
+
+
+
+        .nav {
+
+            display: flex;
+
+            gap: 30px;
+
+        }
+
+
+
+        .nav a {
+
+            color: #ddd;
+
+            transition: .3s;
+
+        }
+
+
+
+        .nav a:hover {
+
+            color: #f7c948;
+
+        }
+
+
+
+
+        .actions {
+
+            display: flex;
+
+            gap: 12px;
+
+            align-items: center;
+
+        }
+
+
+
+        .actions button,
+        .cart-link {
+
+            width: 45px;
+
+            height: 45px;
+
+            border-radius: 50%;
+
+            display: grid;
+
+            place-items: center;
+
+            background: rgba(255, 255, 255, .08);
+
+            color: white;
+
+            font-size: 20px;
+
+        }
+
+
+
+        .cart-link {
+
+            position: relative;
+
+        }
+
+
+
+        #cartCount {
+
+            position: absolute;
+
+            top: -5px;
+
+            right: -5px;
+
+            background: #f7c948;
+
+            color: #111;
+
+            width: 20px;
+
+            height: 20px;
+
+            border-radius: 50%;
+
+            font-size: 12px;
+
+            display: grid;
+
+            place-items: center;
+
+            font-weight: bold;
+
+        }
+
+
+
+
+
+
+
+        /* =========================
+SEARCH
+========================= */
+
+
+        .search-panel {
+
+            display: none;
+
+            position: fixed;
+
+            top: 90px;
+
+            right: 20px;
+
+            left: 20px;
+
+            z-index: 999;
+
+            background: #15151d;
+
+            padding: 20px;
+
+            border-radius: 25px;
+
+            box-shadow: 0 20px 60px #000;
+
+        }
+
+
+
+        .search-panel.active {
+
+            display: block;
+
+        }
+
+
+
+        .search-panel input {
+
+            width: 100%;
+
+            padding: 18px;
+
+            border-radius: 30px;
+
+            background: #222;
+
+            border: 1px solid #444;
+
+            color: white;
+
+            font-size: 16px;
+
+        }
+
+
+
+
+
+
+
+
+        /* =========================
+HERO
+========================= */
+
+
+        .hero {
+
+            padding: 100px 0;
+
+        }
+
+
+
+        .hero-content {
+
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 60px;
+
+            align-items: center;
+
+        }
+
+
+
+        .hero-text span {
+
+            color: #f7c948;
+
+            letter-spacing: 4px;
+
+        }
+
+
+
+        .hero-text h1 {
+
+            font-size: 60px;
+
+            line-height: 1.3;
+
+            margin: 25px 0;
+
+        }
+
+
+
+        .hero-text h1 span {
+
+            background: linear-gradient(90deg, #ffe08a, #f7c948);
+
+            -webkit-background-clip: text;
+
+            color: transparent;
+
+        }
+
+
+
+        .hero-text p {
+
+            color: #aaa;
+
+            font-size: 18px;
+
+            line-height: 2;
+
+        }
+
+
+
+        .hero-buttons {
+
+            display: flex;
+
+            gap: 15px;
+
+            margin-top: 35px;
+
+        }
+
+
+
+        .btn-primary,
+        .btn-secondary {
+
+            padding: 15px 30px;
+
+            border-radius: 50px;
+
+            font-weight: bold;
+
+        }
+
+
+
+        .btn-primary {
+
+            background: #f7c948;
+
+            color: #111;
+
+        }
+
+
+
+        .btn-secondary {
+
+            background: #222;
+
+            border: 1px solid #444;
+
+        }
+
+
+
+        .hero-image img {
+
+            width: 100%;
+
+            height: 500px;
+
+            object-fit: cover;
+
+            border-radius: 35px;
+
+            box-shadow: 0 30px 80px #000;
+
+        }
+
+
+
+
+
+
+
+        /* =========================
+TITLE
+========================= */
+
+
+        .title {
+
+            text-align: center;
+
+            font-size: 38px;
+
+            margin: 70px 0 40px;
+
+            color: #f7c948;
+
+        }
+
+
+
+
+
+
+
+
+        /* =========================
+CATEGORY
+========================= */
+
+
+        .category-grid {
+
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 25px;
+
+        }
+
+
+
+        .category-card {
+
+            background: #171720;
+
+            padding: 35px;
+
+            border-radius: 25px;
+
+            border: 1px solid #333;
+
+            transition: .3s;
+
+        }
+
+
+
+        .category-card:hover {
+
+            transform: translateY(-10px);
+
+            border-color: #f7c948;
+
+        }
+
+
+
+        .category-card h3 {
+
+            font-size: 25px;
+
+            margin-bottom: 15px;
+
+        }
+
+
+
+        .category-card p {
+
+            color: #aaa;
+
+        }
+
+
+
+
+
+
+
+
+        /* =========================
+FILTER
+========================= */
+
+
+        .filter-section {
+
+            margin-top: 60px;
+
+        }
+
+
+
+        .filter-box {
+
+            background: #171720;
+
+            padding: 25px;
+
+            border-radius: 25px;
+
+            display: flex;
+
+            gap: 25px;
+
+            align-items: center;
+
+            justify-content: center;
+
+            flex-wrap: wrap;
+
+        }
+
+
+
+        select,
+        input[type="range"] {
+
+            padding: 15px;
+
+            border-radius: 20px;
+
+            background: #222;
+
+            color: white;
+
+            border: 1px solid #444;
+
+        }
+
+
+
+
+
+
+
+        /* =========================
+PRODUCTS
+========================= */
+
+
+        .product-grid {
+
+            display: grid;
+
+            grid-template-columns: repeat(4, 1fr);
+
+            gap: 25px;
+
+        }
+
+
+
+        .product-card {
+
+            background: #171720;
+
+            border-radius: 25px;
+
+            padding: 20px;
+
+            border: 1px solid #333;
+
+            transition: .3s;
+
+        }
+
+
+
+        .product-card:hover {
+
+            transform: translateY(-8px);
+
+        }
+
+
+
+        .product-card img {
+
+            width: 100%;
+
+            height: 260px;
+
+            object-fit: cover;
+
+            border-radius: 20px;
+
+        }
+
+
+
+        .product-card h3 {
+
+            margin: 15px 0;
+
+        }
+
+
+
+        .brand {
+
+            color: #f7c948;
+
+        }
+
+
+
+        .price {
+
+            margin: 15px 0;
+
+            font-size: 18px;
+
+        }
+
+
+
+        .product-buttons {
+
+            display: flex;
+
+            gap: 10px;
+
+        }
+
+
+
+        .product-buttons button {
+
+            flex: 1;
+
+            padding: 12px;
+
+            border-radius: 20px;
+
+            background: #f7c948;
+
+            color: #111;
+
+            font-weight: bold;
+
+        }
+
+
+
+
+
+
+
+
+        /* =========================
+CART
+========================= */
+
+
+        .cart-box {
+
+            background: #171720;
+
+            padding: 30px;
+
+            border-radius: 30px;
+
+            margin: 70px auto;
+
+        }
+
+
+
+        .cart-item {
+
+            padding: 20px;
+
+            border-bottom: 1px solid #333;
+
+        }
+
+
+
+        .cart-item button {
+
+            margin-top: 10px;
+
+            padding: 8px 20px;
+
+            border-radius: 20px;
+
+            background: #c0392b;
+
+            color: white;
+
+        }
+
+
+
+
+
+
+
+
+        /* =========================
+CONTACT
+========================= */
+
+
+        .contact-box {
+
+            text-align: center;
+
+            padding-bottom: 80px;
+
+            color: #aaa;
+
+        }
+
+
+
+
+
+
+
+
+        /* =========================
+TOAST
+========================= */
+
+
+        #toast {
+
+            position: fixed;
+
+            bottom: 30px;
+
+            right: 30px;
+
+            background: #f7c948;
+
+            color: #111;
+
+            padding: 15px 25px;
+
+            border-radius: 30px;
+
+            opacity: 0;
+
+            transform: translateY(30px);
+
+            transition: .3s;
+
+            z-index: 2000;
+
+            font-weight: bold;
+
+        }
+
+
+
+        #toast.show {
+
+            opacity: 1;
+
+            transform: translateY(0);
+
+        }
+
+
+
+
+
+
+
+        /* =========================
+RESPONSIVE
+========================= */
+
+
+        @media(max-width:900px) {
+
+
+            .hero-content {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+
+            .hero-text h1 {
+
+                font-size: 40px;
+
+            }
+
+
+
+            .category-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+
+            .product-grid {
+
+                grid-template-columns: repeat(2, 1fr);
+
+            }
+
+
+
+            .nav {
+
+                display: none;
+
+            }
+
+
+
+        }
+
+
+
+        @media(max-width:500px) {
+
+
+            .product-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+
+            .hero-image img {
+
+                height: 350px;
+
+            }
+
+
+        }
+    </style>
+
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="container navbar">
+
+
+            <div class="logo">
+                AROME
+            </div>
+
+
+
+            <nav class="nav">
+
+                <a href="#home">
+                    خانه
+                </a>
+
+                <a href="#products">
+                    محصولات
+                </a>
+
+                <a href="#categories">
+                    دسته‌بندی
+                </a>
+
+                <a href="#contact">
+                    تماس
+                </a>
+
+
+            </nav>
+
+
+
+            <div class="actions">
+
+
+                <button id="searchBtn">
+                    ⌕
+                </button>
+
+
+
+                <a href="#cart" class="cart-link">
+
+                    🛒
+
+                    <span id="cartCount">
+                        0
+                    </span>
+
+
+                </a>
+
+
+            </div>
+
+
+
+        </div>
+
+    </header>
+
+
+
+
+
+    <!-- SEARCH -->
+
+
+    <div class="search-panel" id="searchPanel">
+
+
+        <input id="searchInput" placeholder="جستجوی عطر...">
+
+
+        <div id="searchResults">
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <!-- MAIN -->
+
+
+    <main>
+
+
+
+        <!-- HERO -->
+
+
+        <section class="hero" id="home">
+
+
+            <div class="container hero-content">
+
+
+
+                <div class="hero-text">
+
+
+                    <span>
+                        LUXURY PERFUME
+                    </span>
+
+
+
+                    <h1>
+
+                        رایحه‌ای برای
+
+                        <span>
+                            شخصیت خاص
+                        </span>
+
+
+                    </h1>
+
+
+
+                    <p>
+
+                        مجموعه‌ای از بهترین عطرهای جهان،
+                        با طراحی لوکس و تجربه خرید مدرن.
+
+                    </p>
+
+
+
+                    <div class="hero-buttons">
+
+
+                        <a href="#products" class="btn-primary">
+
+                            خرید عطر
+
+                        </a>
+
+
+
+                        <a href="#categories" class="btn-secondary">
+
+                            مشاهده دسته‌بندی
+
+                        </a>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+
+                <div class="hero-image">
+
+
+                    <img
+                        src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=900&q=80">
+
+
+                </div>
+
+
+
+            </div>
+
+
+        </section>
+
+
+
+
+
+
+
+
+        <!-- CATEGORIES -->
+
+
+        <section id="categories">
+
+
+            <div class="container">
+
+
+                <h2 class="title">
+
+                    دسته‌بندی عطرها
+
+                </h2>
+
+
+
+
+
+                <div class="category-grid">
+
+
+
+                    <div class="category-card">
+
+                        <h3>
+                            عطر مردانه
+                        </h3>
+
+                        <p>
+                            رایحه‌های قدرتمند و رسمی
+                        </p>
+
+                    </div>
+
+
+
+
+
+                    <div class="category-card">
+
+                        <h3>
+                            عطر زنانه
+                        </h3>
+
+                        <p>
+                            رایحه‌های ظریف و جذاب
+                        </p>
+
+                    </div>
+
+
+
+
+
+                    <div class="category-card">
+
+                        <h3>
+                            عطرهای لوکس
+                        </h3>
+
+                        <p>
+                            برندهای خاص جهانی
+                        </p>
+
+                    </div>
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+        </section>
+
+
+
+
+
+
+
+
+
+        <!-- FILTER -->
+
+
+        <section class="filter-section">
+
+
+            <div class="container filter-box">
+
+
+                <select id="brandFilter">
+
+
+                    <option value="all">
+                        همه برندها
+                    </option>
+
+
+                    <option value="Dior">
+                        Dior
+                    </option>
+
+
+                    <option value="Chanel">
+                        Chanel
+                    </option>
+
+
+                    <option value="Armani">
+                        Armani
+                    </option>
+
+
+                    <option value="Tom Ford">
+                        Tom Ford
+                    </option>
+
+
+                </select>
+
+
+
+
+
+
+                <input type="range" id="priceFilter" min="1000000" max="10000000" step="100000" value="10000000">
+
+
+
+                <span id="priceText">
+
+                    تا 10,000,000 تومان
+
+                </span>
+
+
+
+            </div>
+
+
+        </section>
+
+
+
+
+
+
+
+
+
+        <!-- PRODUCTS -->
+
+
+        <section id="products">
+
+
+            <div class="container">
+
+
+                <h2 class="title">
+
+                    محصولات ویژه
+
+                </h2>
+
+
+
+
+                <div id="productList" class="product-grid">
+
+                </div>
+
+
+
+            </div>
+
+
+        </section>
+
+
+
+
+
+
+
+
+
+        <!-- CART -->
+
+
+        <section id="cart">
+
+
+            <div class="container cart-box">
+
+
+                <h2 class="title">
+
+                    سبد خرید
+
+                </h2>
+
+
+
+                <div id="cartItems">
+
+                    سبد خرید خالی است
+
+                </div>
+
+
+
+
+                <h3>
+
+                    مجموع:
+
+                    <span id="cartTotal">
+
+                        0
+
+                    </span>
+
+                    تومان
+
+
+                </h3>
+
+
+
+            </div>
+
+
+        </section>
+
+
+
+
+
+
+
+
+        <!-- CONTACT -->
+
+
+        <section id="contact">
+
+
+            <div class="container contact-box">
+
+
+                <h2 class="title">
+
+                    تماس با ما
+
+                </h2>
+
+
+
+                <p>
+
+                    پشتیبانی فروشگاه AROME آماده پاسخگویی است.
+
+                </p>
+
+
+            </div>
+
+
+        </section>
+
+
+
+
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+    <!-- TOAST -->
+
+
+    <div id="toast">
+
+    </div>
+
+
+
+
+
+
+
+    <script src="script.js">
+        // =========================
+        // DATABASE PRODUCTS
+        // =========================
+
+
+        const products = [
+
+
+            {
+                id: 1,
+                name: "Dior Sauvage",
+                brand: "Dior",
+                price: 4500000,
+                image: "https://images.unsplash.com/photo-1547887538-e3a2f32cb1cc"
+            },
+
+
+            {
+                id: 2,
+                name: "Chanel Bleu",
+                brand: "Chanel",
+                price: 5200000,
+                image: "https://images.unsplash.com/photo-1594035910387-fea47794261f"
+            },
+
+
+            {
+                id: 3,
+                name: "Armani Code",
+                brand: "Armani",
+                price: 3800000,
+                image: "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539"
+            },
+
+
+            {
+                id: 4,
+                name: "Tom Ford Noir",
+                brand: "Tom Ford",
+                price: 7500000,
+                image: "https://images.unsplash.com/photo-1615634260167-c8cdede054de"
+            },
+
+
+            {
+                id: 5,
+                name: "Dior Homme",
+                brand: "Dior",
+                price: 6000000,
+                image: "https://images.unsplash.com/photo-1595425970377-c9703cf48b6c"
+            }
+
+
+        ];
+
+
+
+
+
+
+
+
+        // =========================
+        // ELEMENTS
+        // =========================
+
+
+        const productList =
+            document.getElementById("productList");
+
+
+        const cartCount =
+            document.getElementById("cartCount");
+
+
+        const cartItems =
+            document.getElementById("cartItems");
+
+
+        const cartTotal =
+            document.getElementById("cartTotal");
+
+
+
+
+
+
+
+        // =========================
+        // SHOW PRODUCTS
+        // =========================
+
+
+        function renderProducts(list) {
+
+
+            productList.innerHTML = "";
+
+
+
+            if (list.length === 0) {
+
+                productList.innerHTML =
+                    "<h3>محصولی پیدا نشد</h3>";
+
+                return;
+
+            }
+
+
+
+            list.forEach(product => {
+
+
+                productList.innerHTML += `
+
+
+<div class="product-card">
+
+
+<img src="${product.image}?auto=format&fit=crop&w=600&q=80">
+
+
+
+<h3>
+
+${product.name}
+
+</h3>
+
+
+
+<span class="brand">
+
+${product.brand}
+
+</span>
+
+
+
+<p class="price">
+
+${product.price.toLocaleString()}
+
+تومان
+
+</p>
+
+
+
+<div class="product-buttons">
+
+
+<button onclick="addToCart(${product.id})">
+
+افزودن
+
+</button>
+
+
+
+<button onclick="showProduct(${product.id})">
+
+جزئیات
+
+</button>
+
+
+</div>
+
+
+</div>
+
+
+`;
+
+
+
+            });
+
+
+        }
+
+
+
+
+        renderProducts(products);
+
+
+
+
+
+
+
+
+
+        // =========================
+        // CART LOCAL STORAGE
+        // =========================
+
+
+        let cart =
+            JSON.parse(localStorage.getItem("aromeCart"))
+            || [];
+
+
+
+
+
+
+
+        function saveCart() {
+
+            localStorage.setItem(
+                "aromeCart",
+                JSON.stringify(cart)
+            );
+
+
+        }
+
+
+
+
+
+
+
+
+
+        function addToCart(id) {
+
+
+
+            let product =
+                products.find(
+                    p => p.id === id
+                );
+
+
+
+            let item =
+                cart.find(
+                    p => p.id === id
+                );
+
+
+
+
+            if (item) {
+
+                item.qty++;
+
+            }
+
+            else {
+
+
+                cart.push({
+
+                    ...product,
+
+                    qty: 1
+
+                });
+
+
+            }
+
+
+
+            saveCart();
+
+            updateCart();
+
+            showToast(
+                "محصول به سبد اضافه شد"
+            );
+
+
+
+        }
+
+
+
+
+
+
+
+
+        function updateCart() {
+
+
+            let count = 0;
+
+            let total = 0;
+
+
+
+            cart.forEach(item => {
+
+
+                count += item.qty;
+
+
+                total += item.price * item.qty;
+
+
+            });
+
+
+
+
+            cartCount.innerText = count;
+
+
+            cartTotal.innerText =
+                total.toLocaleString();
+
+
+
+            renderCart();
+
+
+        }
+
+
+
+
+
+
+
+
+
+        function renderCart() {
+
+
+
+            if (cart.length === 0) {
+
+                cartItems.innerHTML =
+                    "سبد خرید خالی است";
+
+                return;
+
+            }
+
+
+
+            cartItems.innerHTML = "";
+
+
+
+            cart.forEach(item => {
+
+
+                cartItems.innerHTML += `
+
+
+<div class="cart-item">
+
+
+<h3>
+
+${item.name}
+
+</h3>
+
+
+
+<p>
+
+تعداد:
+${item.qty}
+
+</p>
+
+
+
+<p>
+
+قیمت:
+
+${(item.price * item.qty).toLocaleString()}
+
+تومان
+
+</p>
+
+
+
+<button onclick="removeCart(${item.id})">
+
+حذف
+
+</button>
+
+
+
+</div>
+
+
+`;
+
+
+            });
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+        function removeCart(id) {
+
+
+
+            cart =
+                cart.filter(
+                    item => item.id !== id
+                );
+
+
+
+            saveCart();
+
+
+            updateCart();
+
+
+        }
+
+
+
+
+
+
+
+
+
+        // =========================
+        // SEARCH
+        // =========================
+
+
+
+        const searchBtn =
+            document.getElementById("searchBtn");
+
+
+        const searchPanel =
+            document.getElementById("searchPanel");
+
+
+        searchBtn.onclick = () => {
+
+
+            searchPanel.classList.toggle("active");
+
+
+        };
+
+
+
+
+
+
+
+
+        const searchInput =
+            document.getElementById("searchInput");
+
+
+
+        searchInput.addEventListener(
+            "input",
+            () => {
+
+
+                let text =
+                    searchInput.value.toLowerCase();
+
+
+
+                let result =
+                    products.filter(
+                        p =>
+
+                            p.name.toLowerCase()
+                                .includes(text)
+
+                            ||
+
+                            p.brand.toLowerCase()
+                                .includes(text)
+
+                    );
+
+
+
+                renderProducts(result);
+
+
+
+            }
+
+        );
+
+
+
+
+
+
+
+
+
+        // =========================
+        // FILTER
+        // =========================
+
+
+
+        document
+            .getElementById("brandFilter")
+            .addEventListener(
+                "change",
+                filterProducts
+            );
+
+
+
+
+        document
+            .getElementById("priceFilter")
+            .addEventListener(
+                "input",
+                filterProducts
+            );
+
+
+
+
+
+
+        function filterProducts() {
+
+
+
+            let brand =
+                document.getElementById("brandFilter")
+                    .value;
+
+
+
+            let price =
+                Number(
+                    document.getElementById("priceFilter")
+                        .value
+                );
+
+
+
+
+
+            document.getElementById("priceText")
+                .innerText =
+                "تا " +
+                price.toLocaleString()
+                +
+                " تومان";
+
+
+
+
+
+
+            let result =
+                products.filter(product => {
+
+
+                    let brandCheck =
+                        brand === "all"
+                        ||
+                        product.brand === brand;
+
+
+
+                    let priceCheck =
+                        product.price <= price;
+
+
+
+                    return brandCheck && priceCheck;
+
+
+                });
+
+
+
+
+            renderProducts(result);
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+        // =========================
+        // PRODUCT DETAILS
+        // =========================
+
+
+        function showProduct(id) {
+
+
+            let p =
+                products.find(
+                    x => x.id === id
+                );
+
+
+
+            alert(
+
+                p.name +
+                "\n\n" +
+                "برند: " +
+                p.brand +
+                "\n" +
+                "قیمت: " +
+                p.price.toLocaleString()
+                +
+                " تومان"
+
+            );
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+        // =========================
+        // TOAST
+        // =========================
+
+
+
+        function showToast(text) {
+
+
+
+            let toast =
+                document.getElementById("toast");
+
+
+
+            toast.innerText = text;
+
+
+            toast.classList.add("show");
+
+
+
+            setTimeout(() => {
+
+
+                toast.classList.remove("show");
+
+
+            }, 2000);
+
+
+        }
+
+
+
+
+
+
+
+        // START
+
+
+        updateCart();
+    </script>
+
+
+</body>
+
+</html>
